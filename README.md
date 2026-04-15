@@ -28,15 +28,15 @@ AgroAI serves as a specialized agricultural assistant that guides farmers throug
 - **Backend & Database:** Supabase (PostgreSQL, Authentication)
 - **Serverless Compute:** Supabase Edge Functions
 - **Artificial Intelligence:**
-  - **OpenAI:** Contextual text generation and dialogue management.
-  - **Google Cloud Vision API:** Image processing and visual analysis of crop issues.
+  - **OpenAI:** Handles both contextual text generation and image analysis, enabling unified processing for crop diagnosis and recommendations.
 
 ## 5. Architecture Overview
 
-AgroAI leverages a modern, serverless architecture to ensure scalability and ease of deployment. 
-- The **Frontend** provides a responsive interface built with React and TypeScript, communicating directly with Supabase for authentication and database operations.
-- The **Backend** relies on Supabase for data persistence and user management.
-- **Supabase Edge Functions** act as a secure middleware layer, processing user requests from the frontend, managing API keys securely, and orchestrating calls to the OpenAI and Google Cloud Vision APIs before returning the synthesized guidance to the user.
+AgroAI leverages a modern, serverless architecture to ensure scalability and ease of deployment.
+
+- The Frontend provides a responsive interface built with React and TypeScript, communicating directly with Supabase for authentication and database operations.
+- The Backend relies on Supabase for data persistence and user management.
+- Supabase Edge Functions act as a secure middleware layer, processing user requests from the frontend, managing API keys securely, and orchestrating calls to the OpenAI API for both text and image understanding before returning the synthesized guidance to the user.
 
 ## 6. How It Works
 
@@ -59,7 +59,7 @@ AgroAI leverages a modern, serverless architecture to ensure scalability and eas
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Bryan-Serafim/agro-ai/
    cd agro-ai
    ```
 
@@ -98,3 +98,6 @@ This project was developed by:
 - **Carlos Vitor** — Product & Business Strategy
 - **Anna Clara** — UX/UI Design & User Experience
 - **Werley Toledo** — Research & Domain Analysis *(Agriculture context)*
+
+## 10. Live Demo
+https://agro-ai-one.vercel.app/
